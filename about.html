@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About realme - Dare to Leap</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" type="image/png" href="Images/title_logo.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Images/realme_logo.svg" alt="realme Logo">
+                </a>
+            </div>
+            <div class="nav-links">
+                <div class="dropdown">
+                    <button class="dropbtn">Products</button>
+                    <div class="dropdown-content">
+                        <a href="Products/smartphones.html">Smartphones</a>
+                        <a href="Products/smartwatches.html">Smartwatches</a>
+                        <a href="Products/audio.html">Audio</a>
+                    </div>
+                </div>
+                <a href="about.html">About Us</a>
+                <a href="support.html">Support</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="about-container">
+        <!-- Hero Video Section -->
+        <section class="about-hero">
+            <div class="hero-video-container">
+                <video id="bannerVideo" autoplay muted loop>
+                    <source src="Videos/realme About Banner video.mp4" type="video/mp4">
+                </video>
+                <div class="video-overlay">
+                    <h1>About realme</h1>
+                    <p>Dare to Leap</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main About Content -->
+        <section class="about-content">
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p>realme is a technology brand that specializes in providing high quality smartphones and AIoT products. We bring together best-in-class technology and innovative designs that empower young people worldwide.</p>
+            </div>
+
+            <!-- Feature Video Section -->
+            <div class="feature-video">
+                <video id="mainVideo" poster="Images/realme_logo.svg">
+                    <source src="Videos/realme About video.mp4" type="video/mp4">
+                </video>
+                <button class="play-button" onclick="playMainVideo()">Watch Our Story</button>
+            </div>
+        </section>
+
+        <!-- Anniversary Section -->
+        <section class="anniversary-section">
+            <h2>Celebrating 5 Years of Innovation</h2>
+            <div class="anniversary-content">
+                <div class="anniversary-text">
+                    <p>Since our founding, we've grown into a global technology brand, serving millions of young users across 61 markets worldwide.</p>
+                </div>
+                <div class="anniversary-video">
+                    <video controls>
+                        <source src="Videos/Leaper's Game Recap realme 5th Anniversary.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="copyright">
+                © 2018-2024 realme. All Rights Reserved.
+            </div>
+            <div class="legal-links">
+                <a href="https://www.realme.com/global/legal/user-agreement" target="_blank">User Agreement</a>
+                <a href="https://www.realme.com/global/legal/privacy-policy" target="_blank">Privacy Policy</a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/realmeGlobal" target="_blank"><img src="Images/facebook.svg" alt="Facebook"></a>
+                <a href="https://www.instagram.com/realmeglobal" target="_blank"><img src="Images/Instagram.svg" alt="Instagram"></a>
+                <a href="https://twitter.com/realmeGlobal" target="_blank"><img src="Images/x.svg" alt="X"></a>
+                <a href="https://www.youtube.com/@realmeglobalofficial" target="_blank"><img src="Images/youtube.svg" alt="YouTube"></a>
+            </div>
+        </div>
+        <div class="back-to-top">
+            <a href="#"><img src="Images/backtop.png" alt="Back to Top"></a>
+        </div>
+    </footer>
+
+    <script>
+        function playMainVideo() {
+            const video = document.getElementById('mainVideo');
+            const button = document.querySelector('.play-button');
+            video.play();
+            button.style.display = 'none';
+        }
+    </script>
+    <script src="JS/script.js"></script>
+</body>
+</html>
